@@ -26,4 +26,16 @@ abstract class PrinterSdkPluginPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<void> initLPAPI() {
+    throw UnimplementedError('initLPAPI() has not been implemented.');
+  }
+
+  Future<void> initCallback(
+      {Function? onPrintSuccess,
+      Function? onPrintError,
+      Function? onConnected,
+      Function? onDisconnected}) {
+    throw UnimplementedError('initLPAPI() has not been implemented.');
+  }
 }

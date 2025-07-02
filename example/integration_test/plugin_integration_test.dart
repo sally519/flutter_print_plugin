@@ -9,12 +9,12 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:printer_sdk_plugin/met/print_callback.dart';
 
 import 'package:printer_sdk_plugin/printer_sdk_plugin.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
-
   testWidgets('getPlatformVersion test', (WidgetTester tester) async {
     final PrinterSdkPlugin plugin = PrinterSdkPlugin();
     final String? version = await plugin.getPlatformVersion();
